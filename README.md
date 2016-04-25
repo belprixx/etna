@@ -1,2 +1,2 @@
-# etna
-projet etna
+# ETNA
+projet ETNA
