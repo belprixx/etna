@@ -8,7 +8,7 @@
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     width: 90%;
-    max-height: 25em;
+    max-height: 23em;
     margin: auto;
 }
 .margin_card {
@@ -208,7 +208,8 @@ body {
     filter: grayscale(0%);
 }
 .partenaire_img {
-
+    width: 10em;
+    height: 10em;
     -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
     filter: grayscale(100%);
 }
