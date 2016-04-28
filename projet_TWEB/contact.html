@@ -12,7 +12,7 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img id="brand" src="img/Logo_BNP_Paribas.svg.png">
             </a>
         </div>
@@ -31,15 +31,54 @@
         </div>
     </div>
 </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Connection</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="login" class="control-label">Login:</label>
+                        <input type="text" class="form-control" id="login" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd-text" class="control-label">Mot de Passe:</label>
+                        <input type="text" class="form-control" id="pwd-text" required>
+                    </div>
+                    <button type="button" class="btn btn-primary form-control">Connection</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FLAG SUCCESS -->
+<div class="container">
+    <div id="alert_contact_success" class="alert alert-success alert-dismissable alert_contact">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Valide!</strong> votre message a ete envoyee.
+    </div>
+</div>
+<!-- FLAG Fail -->
+<div class="container">
+    <div id="alert_contact_fail" class="alert alert-danger alert-dismissable alert_contact">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Erreur!</strong> rentree votre prenom, nom et votre email, le commentaire et optionnelle.
+    </div>
+</div>
 <div class="container-fluid">
     <div class="row">
         <br><br>
         <div class="col-lg-6">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.289787677415!2d2.3354873158997242!3d48.87175197928882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e397c0372bf%3A0x14676cc123f085df!2s16+Boulevard+des+Italiens%2C+75009+Paris!5e0!3m2!1sfr!2sfr!4v1461853171251" width="800" height="580" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.289787677415!2d2.3354873158997242!3d48.87175197928882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e397c0372bf%3A0x14676cc123f085df!2s16+Boulevard+des+Italiens%2C+75009+Paris!5e0!3m2!1sfr!2sfr!4v1461853171251" class="map_google" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="col-lg-6">
             <form>
-                <div class="form-group" role="form">
+                <div class="form-group">
                     <label for="prenom" class="control-label">Prénom :</label>
                     <input id="prenom" type="text" class="form-control" placeholder="Prénom">
                 </div>
@@ -55,15 +94,14 @@
                     <label for="comm" class="control-label">Commentaire :</label>
                     <textarea id="comm" class="form-control" rows="5" ></textarea>
                 </div>
-                <div class="form-group">
-                    <button class="btn btn-lg btn-success col-md-offset-10">Validé</button>
-                </div>
             </form>
+                <div>
+                    <button id="contact_form" class="btn btn-lg btn-success col-md-offset-10">Validé</button>
+                </div>
         </div>
     </div>
 </div>
-<div class="margin_card">
-    <nav class="nav navbar-default navbar-fixed-bottom">
+    <nav class="nav navbar-default">
         <div class="row">
             <div class="col-lg-4">
                 <h4 class="col-md-offset-1">Contact :</h4>
@@ -76,9 +114,9 @@
             </div>
             <div class="col-lg-4 col-md-offset-1">
                 <h4>Suivez notre actualité :</h4>
-                <img class="social_img" src="img/facebook.png">
-                <img class="social_img" src="img/twitter2.png">
-                <img class="social_img" src="img/instagram2.png">
+                <a href="https://www.facebook.com/mabanque.bnpparibas/"><img class="social_img" src="img/facebook.png"></a>
+                <a href="https://twitter.com/bnpparibas?lang=fr"><img class="social_img" src="img/twitter2.png"></a>
+                <a href="https://www.instagram.com/bnpparibas/"><img class="social_img" src="img/instagram2.png"></a>
             </div>
             <div class="col-lg-3">
                 <h4>A propos de :</h4>
@@ -86,7 +124,6 @@
             </div>
         </div>
     </nav>
-</div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="lib/my_js.js"></script>

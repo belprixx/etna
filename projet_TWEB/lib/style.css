@@ -29,7 +29,7 @@ body {
     position: relative;
     overflow: hidden;
     left: 50%;
-    width: 370px;
+    width: 25em;
     -webkit-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
@@ -208,7 +208,7 @@ body {
     filter: grayscale(0%);
 }
 .partenaire_img {
-    width: 20em;
+    width: 15em;
     height: 10em;
     -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
     filter: grayscale(100%);
@@ -220,4 +220,13 @@ body {
 .social_img {
     width: 3em;
     height: 3em;
+}
+.map_google
+{
+    width: 45em;
+    height: 30em;
+}
+
+.alert_contact {
+    display: none;
 }
