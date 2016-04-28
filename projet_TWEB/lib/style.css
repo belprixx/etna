@@ -22,7 +22,7 @@ body {
     font-family: Open Sans;
     font-size: 16px;
     line-height: 1.4;
-    background-color: #204d74;
+    background-color: #95a5a6;
 }
 
 .card {
@@ -208,8 +208,16 @@ body {
     filter: grayscale(0%);
 }
 .partenaire_img {
-    width: 10em;
+    width: 20em;
     height: 10em;
     -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
     filter: grayscale(100%);
+}
+.white
+{
+    color: #ffffff;
+}
+.social_img {
+    width: 3em;
+    height: 3em;
 }
