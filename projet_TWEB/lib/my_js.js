@@ -18,16 +18,38 @@ $(document).ready(function(){
             $('#alert_contact_fail').show();
         }
     });
+    $('#connect').click(function() {
+        if ($('#login').val() != '' && $('#pswd').val() != '')
+        {
+            localStorage.setItem("connected",true);
+            $(location).attr('href',"profil.html");
+        }
+        else
+        {
+            $('#alert_login_fail').show();
+        }
+    });
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   $('#exit').click(function() {
+       localStorage.setItem("connected",true);
+   });
+
+   $('#nav_deco').click(function() {
+        localStorage.connected = false;
+   });
+
+   if (localStorage.connected == "true")
+   {
+       $('#nav_log').show();
+       $('#nav_deco').show();
+       $('#co').hide();
+   }
+   else
+   {
+       $('#nav_log').hide();
+       $('#nav_deco').hide();
+       $('#co').show();
+   }
+
+
 });
