@@ -5,12 +5,10 @@ $(document).ready(function(){
     $('#myModal').on('shown.bs.modal', function () {
         $('#myInput').focus()
     });
-    $('#contact_form').click(function () {
-        console.log('cc');
 
+    $('#contact_form').click(function () {
         if ($('#prenom').val() != '' && $('#nom').val() != '' && $('#mail').val() != '')
         {
-            console.log('toto');
             $('#alert_contact_success').show()
         }
         else
@@ -18,6 +16,7 @@ $(document).ready(function(){
             $('#alert_contact_fail').show();
         }
     });
+
     $('#connect').click(function() {
         if ($('#login').val() != '' && $('#pswd').val() != '')
         {
@@ -50,6 +49,5 @@ $(document).ready(function(){
        $('#nav_deco').hide();
        $('#co').show();
    }
-
-
+    
 });
